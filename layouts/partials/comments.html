@@ -1,4 +1,5 @@
 <!-- valine -->
+{{ if .Site.Params.valine.enable }}
 <div class="doc_comments">
     <div class="comments_block_title">发表评论</div>
     <div id="vcomments"></div>
@@ -17,3 +18,17 @@
         visitor: '{{ .Site.Params.valine.visitor }}',
     })
 </script>
+{{ end }}
+
+<!-- utteranc -->
+{{ if .Site.Params.utteranc.enable }}
+  <div class="doc_comments">
+    <script src="https://utteranc.es/client.js"
+          repo= "{{ .Site.Params.utteranc.repo }}"
+          issue-term="{{ .Site.Params.utteranc.issueTerm }}"
+          theme="{{ default "github-light" .Site.Params.utteranc.theme }}"
+          crossorigin="anonymous"
+          async>
+    </script>
+  </div>
+{{ end }}
