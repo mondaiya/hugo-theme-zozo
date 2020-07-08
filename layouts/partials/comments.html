@@ -22,7 +22,6 @@
 
 <!-- utteranc -->
 {{ if .Site.Params.utteranc.enable }}
-  <div class="doc_comments">
     <script src="https://utteranc.es/client.js"
           repo= "{{ .Site.Params.utteranc.repo }}"
           issue-term="{{ .Site.Params.utteranc.issueTerm }}"
@@ -30,5 +29,4 @@
           crossorigin="anonymous"
           async>
     </script>
-  </div>
 {{ end }}
