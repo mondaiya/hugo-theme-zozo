@@ -1,0 +1,45 @@
+html {
+    background-color: unset;
+}
+
+body {
+    max-width: unset;
+    padding: unset;
+    line-height: unset;
+}
+
+.post_footer,
+.nav_container,
+.header,
+.post_title {
+    font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+* {
+    box-sizing: unset;
+}
+
+a:link, a:visited {
+    opacity: 1;
+    transition: all 0.15s linear;
+    color: #424242;
+}
+
+a:focus {
+    outline-offset: unset;
+    outline: unset;
+}
+
+h1:first-child {
+    text-align: unset;
+}
+
+.markdown strong {
+    padding: unset;
+    background-color: unset;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
